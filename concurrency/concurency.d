@@ -28,5 +28,7 @@ void main () {
 	send(locate("worker"), 3);
 	send(locate("worker"), "exit");
 
+	receive((string What) { writeln(What); },);
+
 	Thread.sleep(dur!("seconds")(5));
 }
