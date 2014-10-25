@@ -1,0 +1,8 @@
+import std.stdio;
+
+void main () {
+	char[] a;
+	foreach (int i, char c; a) {
+		writefln("a[%d] = '%c'", i, c);
+	}
+}
