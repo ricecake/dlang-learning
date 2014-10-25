@@ -8,4 +8,8 @@ class MyClass {
 	}
 }
 
+void main() {
+	MyClass it = new MyClass;
+	it.print();
+}
 
