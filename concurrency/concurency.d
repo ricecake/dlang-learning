@@ -28,7 +28,11 @@ void main () {
 	send(locate("worker"), 3);
 	send(locate("worker"), "exit");
 
-	receive((string What) { writeln(What); },);
-
+	try {
+		receive((string What) { writeln(What); },);
+	}
+	catch(Throwable o) {
+		writeln("caught");
+	}
 	Thread.sleep(dur!("seconds")(5));
 }
