@@ -6,6 +6,9 @@ void main () {
 		if (i%2) {
 			writeln(i);
 		}
+		else {
+			writeln(c);
+		}
 		writefln("a[%d] = '%c'", i, c);
 	}
 }
